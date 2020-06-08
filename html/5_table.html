@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        box-shadow: 4px 6px 13px 1px #655d5d;
+      }
+      thead {
+        color: #ffffff;
+      }
+      tbody {
+        color: #ff9c7a;
+        text-align: center;
+        font-size: 17px;
+        text-shadow: 0px 0px 1px #ffffff;
+      }
+      .sec_table {
+        border-color: lawngreen;
+      }
+      .sec_table tbody {
+        color: black;
+      }
+      caption {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      border="1"
+      width="700"
+      background="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      bgcolor="gray"
+    >
+      <thead>
+        <tr>
+          <th colspan="4">Student Information</th>
+        </tr>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Classroom</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sasha</td>
+          <td rowspan="3">6</td>
+          <td>sasha@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>shrisha</td>
+          <td>shrisha@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ananya</td>
+          <td>Ananya@gmail.com</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Manva</td>
+          <td rowspan="3">7</td>
+          <td>manva@gmail.com</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Krishna</td>
+          <td>Krishna@gmail.com</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Rudra</td>
+          <td>Rudra@gmail.com</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Parul</td>
+          <td rowspan="3">8</td>
+          <td>Parul@gmail.com</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Divyanka</td>
+          <td>Divyanka@gmail.com</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Riday</td>
+          <td>Riday@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table border="1" class="sec_table" width="600">
+      <caption>
+        <b>Time Table</b>
+      </caption>
+      <colgroup>
+        <col style="background-color: #d367e7;" />
+        <col style="background-color: yellow;" />
+        <col style="background-color: greenyellow;" />
+        <col style="background-color: gray;" />
+        <col style="background-color: peru;" />
+      </colgroup>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>09:00 - 10:00</td>
+        <td>Maths</td>
+        <td>PE</td>
+        <td>History</td>
+        <td>Maths</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Geography</td>
+        <td>Italian</td>
+        <td>Italian</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5" bgcolor="white">Break</td>
+      </tr>
+      <tr>
+        <td>11:30 - 12:30</td>
+        <td>Science</td>
+        <td>Italian</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>History</td>
+      </tr>
+      <tr>
+        <td>12:30 - 13:30</td>
+        <td>Italian</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="5" bgcolor="white">Lunch</td>
+      </tr>
+      <tr>
+        <td>15:00 - 16:00</td>
+        <td>Science</td>
+        <td>Italian</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>History</td>
+      </tr>
+      <tr>
+        <td>16:00 - 17:00</td>
+        <td>Italian</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>English</td>
+      </tr>
+    </table>
+  </body>
+</html>
