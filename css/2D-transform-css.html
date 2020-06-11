@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .section1 {
+        margin-top: 80px;
+      }
+      .sec {
+        margin-left: 50px;
+        width: 228px;
+        /* margin: 0px; */
+        display: inline-block;
+        border: 3px solid gray;
+        box-shadow: 3px 3px 6px grey;
+      }
+      p {
+        background-color: red;
+        width: 200px;
+        height: 100px;
+        margin: 1px;
+        display: inline-block;
+      }
+      .div1 {
+        background-color: blueviolet;
+        transform: translate(10px, 25px);
+      }
+      .div2 {
+        background-color: green;
+        transform: rotate(30deg);
+      }
+      .div3 {
+        background-color: rgb(7, 89, 114);
+        transform: scale(1, 2); /* Standard syntax */
+      }
+      .div4 {
+        background-color: gold;
+        transform: scaleX(2);
+      }
+      .div5 {
+        background-color: pink;
+        transform: scaleY(2);
+      }
+      .div6 {
+        background-color: mediumseagreen;
+        transform: skewX(40deg);
+      }
+      .div7 {
+        background-color: rgb(135, 168, 13);
+        transform: skewY(40deg);
+      }
+      .div8 {
+        background-color: rgb(135, 168, 13);
+        transform: skew(15deg, 16deg);
+      }
+      .div9 {
+        background-color: rgb(65, 206, 231);
+
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="sec">
+        <p>
+          This a normal transform div element.
+        </p>
+        <p class="div1">Transform property(shift 10px,25px)</p>
+      </div>
+      <div class="sec">
+        <p>
+          This a normal rotated div element.
+        </p>
+
+        <p class="div2">This is rotated iv</p>
+      </div>
+      <div class="sec">
+        <p>
+          This a normal scale div element.
+        </p>
+
+        <p class="div3">Scale property</p>
+      </div>
+
+      <div class="sec">
+        <p>
+          This a normal scale x div element.
+        </p>
+
+        <p class="div4">Scale x div</p>
+      </div>
+    </section>
+    <section class="section1">
+      <div class="sec">
+        <p>
+          This a normal scale y div element.
+        </p>
+
+        <p class="div5">Scale y div</p>
+      </div>
+      <div class="sec">
+        <p>
+          This a normal skewX div element.
+        </p>
+
+        <p class="div6">skewX property</p>
+      </div>
+      <div class="sec">
+        <p>
+          This a normal skewY div element.
+        </p>
+
+        <p class="div7">skewY property</p>
+      </div>
+      <div class="sec">
+        <p>
+          This a normal skew div element.
+        </p>
+
+        <p class="div8">skew property</p>
+      </div>
+    </section>
+    <section class="section1">
+      <div class="sec">
+        <p>
+          matrix(scaleX,skewX,skewY,scaleY,translateX, translateY).
+        </p>
+
+        <p class="div9">skew property</p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid #13c8ff;
+        padding: 5px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Questions</th>
+          <th>Ans</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td><b>What is css?</b></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>How many types of css selector</td>
+          <td>
+            thre are 4 type of Selectors
+            <ul>
+              <li>Simple Selector</li>
+              <li>Combinator selectors(space,>,+,~)</li>
+              <li>Pseudo Element (::)</li>
+              <li>Pseudo Class (:)</li>
+              <li>Attribute (=,~=,|=,^=,*= $=,)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Simple Selector</td>
+          <td>
+            There are four different Simple selector in CSS:
+            <ul>
+              <li>id selector #id1{}</li>
+              <li>Class selector .cls{}</li>
+              <li>universal selector *{}</li>
+              <li>group selector tag1, tag2, .classname, #idname{}</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Combinators selector</td>
+          <td>
+            A combinator is something that explains the relationship between the
+            selectors.<br />
+            There are four different combinators in CSS:
+            <ul>
+              <li>descendant selector (space) div p{}</li>
+              <li>child selector (>) div > p{}</li>
+              <li>adjacent sibling selector (+) div + p{}</li>
+              <li>general sibling selector (~) div ~ p{}</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Attribute selector</td>
+          <td>
+            <ul>
+              <li>
+                <b>Syntax:- tag[atrribute="value"] { propertise: value;</b> }
+              </li>
+              <li>
+                <b>Syntax:- tag[atrribute~="value"] { propertise: value;</b> }
+                -- for specific value
+              </li>
+              <li>
+                <b>Syntax:- tag[atrribute|="value"] { propertise: value;</b> }
+                -- selector is used to select elements with the specified
+                attribute starting with the specified value.
+              </li>
+              <li>
+                <b>Syntax:- tag[attribute^="value"] { propertise: value;</b> }
+                -- elector is used to select elements whose attribute value
+                begins with a specified value.
+              </li>
+              <li>
+                <b>Syntax:- tag[attribute*="value"] { propertise: value;</b> }
+                --selector is used to select elements whose attribute value
+                contains a specified value.
+              </li>
+              <li>
+                <b>Syntax:- tag[attribute$="value"] { propertise: value;</b> }
+                --selector is used to select elements whose attribute value ends
+                with a specified value.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td><b>What is sequence of Pseudo classes? means link css</b></td>
+          <td>
+            there four type for link css:- :link,:visited,:hover:active
+            <b
+              >Remember a:hover MUST come after a:link and a:visited in the CSS
+              definition in order to be effective. Also, a:active MUST come
+              after a:hover in the CSS definition</b
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td><b>What is Diff between border and outline?</b></td>
+          <td>
+            <ol>
+              <li>
+                Border Allow to set each edges with different width or color.
+                outlines won't allow us to set each edge to a different width,
+                or set different colors and styles for each edge. An outline is
+                the same on all sides.
+              </li>
+              <li>
+                Border can be in rectangle shape , but Outlines may be
+                non-rectangular.
+              </li>
+              <li>
+                Border can change the size and position of the element , but
+                outlines don't change the size or position of the element.
+              </li>
+              <li>
+                Outlines do not take up space, because they always placed on top
+                of the box of the element which may cause them to overlap other
+                elements on the page.
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td><b>Diff between flex and inline display propertise</b></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9.</td>
+          <td>
+            <b>Diff between visibility: hidden and display: none; propertise</b>
+          </td>
+          <td>
+            The hidden property just hide the element , but still occupie the
+            space. that space cant be take another element . i.e its affect the
+            layout. <br />whereas display : none propertie hide the element as
+            well as provide that space to other element .
+          </td>
+        </tr>
+        <tr>
+          <td>10.</td>
+          <td><b>What is z- index</b></td>
+          <td>
+            <p>
+              The z-index property specifies the stack order of an element.An
+              element with greater stack order is always in front of an element
+              with a lower stack order.<br />
+              z-index only works on positioned elements (position: absolute,
+              position: relative, position: fixed, or position: sticky).
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>11.</td>
+          <td><b>What are the limitations of CSS?</b></td>
+          <td>
+            <ul>
+              <li>Ascending by selectors is not possible</li>
+              <li>Limitations of vertical control</li>
+              <li>No expressions</li>
+              <li>No column declaration</li>
+              <li>Pseudo-class not controlled by dynamic behavior</li>
+              <li>Rules, styles, targeting specific text not possible</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>12.</td>
+          <td><b>How block elements can be centered with CSS1</b></td>
+          <td>
+            <p>
+              The margin-left and margin-right properties can be set to auto
+              value:
+            </p>
+            
+          </td>
+        </tr>
+        <tr>
+          <td>12.</td>
+          <td><b>CSS 3D Transforms</b></td>
+          <td>
+            <p>
+             CSS transforms allow you to move, rotate, scale, and skew elements.<br>
+            With the CSS transform property you can use the following 2D transformation methods
+            <ul>
+              <li>rotateX(): property:=> transform-origin :- posiible value => left, right, center, length , %</li>
+              <li>rotateY() : property:=> transform-origin :- posiible value => top, bottom, center, length, %</li>
+              <li>rotateZ() : property:=> transform-origin :- posiible value => length</li>
+              
+            </ul>
+            </p>
+            
+          </td>
+        </tr>
+        <tr>
+          <td>13.</td>
+          <td><b>CSS 2D Transforms</b></td>
+          <td>
+            <p>
+             CSS transforms allow you to move, rotate, scale, and skew elements.<br>
+            With the CSS transform property you can use the following 2D transformation methods
+            <ul>
+              <li>translate(): move the element from origanal to give point of x,y axis</li>
+              <li>rotate(): its rotaed the element</li>
+              <li>scaleX()</li>
+              <li>scaleY()</li>
+              <li>scale(): increase decrease the size of an element</li>
+              <li>skewX()</li>
+              <li>skewY()</li>
+              <li>skew()</li>
+              <li>matrix()</li>
+            </ul>
+            </p>
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

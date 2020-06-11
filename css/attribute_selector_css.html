@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h3 {
+        color: #14eb5e;
+        text-shadow: 1px 1px 1px #161716, 2px 2px 4px #f1ff0b;
+        font-family: cursive;
+        text-align: center;
+      }
+      .sec {
+        margin-top: 40px;
+      }
+      div {
+        width: 600px;
+        height: 250px;
+        border: 1px solid #fbf100;
+        box-shadow: 4px 4px 6px #3e4f44;
+        padding: 7px;
+        display: inline-block;
+      }
+      /* [title] {
+        background-color: #f5ff62b8;
+      } */
+      [title="atrribute"] {
+        color: hotpink;
+        font-size: 15px;
+      }
+      [title~="beautiful"] {
+        color: hotpink;
+        font-size: 15px;
+        border: 1px solid #fbf100;
+        box-shadow: 4px 4px 6px #3e4f44;
+      }
+      [class|="top"] {
+        color: blue;
+      }
+      [title^="flower"] {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h3>1. Attribute [title]{ }</h3>
+        <ol>
+          <li title="title_atrribute_css_[title]">
+            apply the background-color property whose attribute is titile.
+            [title]{}
+          </li>
+          <li title="title_atrribute_css_[title]">
+            apply the background-color property whose attribute is titile.
+            [title]{}
+          </li>
+          <li>this li has no title attribute apply</li>
+          <li title="title_atrribute_css_[title]">
+            apply the background-color property whose attribute is titile.
+            [title]{}
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h3>
+          2. Attribute [attribute="value"] means title="atrribute"
+        </h3>
+        <ol>
+          <li title="atrribute">
+            its target is _blank
+          </li>
+          <li title="text-atrribute">
+            its target is _top
+          </li>
+          <li title="atrribute text is ">
+            its target is _blank
+          </li>
+          <li>
+            its target is _parent
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="sec">
+      <div>
+        <h3>3. Attribute [attribute~="value"]</h3>
+        <img
+          src="../assets/img/img.jpeg"
+          title="beautiful"
+          width="120"
+          height="120"
+        />
+        <img
+          src="../assets/img/img1.jpg"
+          title=" nature-is-beautiful "
+          width="120"
+          height="120"
+        />
+        <img
+          src="../assets/img/img2.jpg"
+          title=" How beautiful image"
+          width="120"
+          height="120"
+        />
+        <img
+          src="../assets/img/img3.jpg"
+          title="nature is beautiful"
+          width="120"
+          height="120"
+        />
+      </div>
+      <div>
+        <h3>4. Attribute [attribute|="value"] means [class |="top"]</h3>
+        <p class="top">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendusa
+        </p>
+        <p class="t_top">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+        <p class="top-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+        <p class="its-top-new">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div>
+        <h3>5. Attribute [attribute^="value"]</h3>
+        <p title="flower">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendusa
+        </p>
+        <p title="flower-hhh">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+        <p title="hhh-flower">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+        <p title=" flower its ">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+      </div>
+      <div>
+        <h3>6. Attribute [attribute$="value"] means [class $="top"]</h3>
+        <p class="top">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendusa
+        </p>
+        <p class="t_top">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+        <p class="top-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+        <p class="text-top">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        </p>
+      </div>
+    </section>
+    <section class="sec">
+      <div>
+        <h3>7. Attribute [attribute*="value"]</h3>
+        <img
+          src="../assets/img/img.jpeg"
+          title="beautiful"
+          width="120"
+          height="120"
+        />
+        <img
+          src="../assets/img/img1.jpg"
+          title=" image "
+          width="120"
+          height="120"
+        />
+        <img
+          src="../assets/img/img2.jpg"
+          title=" How beautiful image"
+          width="120"
+          height="120"
+        />
+        <img
+          src="../assets/img/img3.jpg"
+          title="nature is beautiful"
+          width="120"
+          height="120"
+        />
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+       border: 2px solid #30af07;
+    box-shadow: 1px 1px 4px #dfcc72;
+    border-collapse: collapse
+      }
+      th{
+         color: #2ba700;
+    text-align: center;
+    font-weight: 800;
+    font-size: 22px;
+      }
+      td:nth-child(4){
+          width: 800px;
+    text-align: center;
+    padding: 15px;
+      }
+      td:nth-child(3){
+          width: 200px;
+    text-align: center;
+      }
+      td:nth-child(2){
+         color: maroon;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+      }
+      thead{
+          text-align: center;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <table>
+            <thead>
+          <tr>
+            <th>No.</th>
+            <th>Atrribute</th>
+            <th>Example</th>
+            <th>discription</th>
+          </tr>
+          </thead>
+          <tr>
+            <td>1.</td>
+            <td>[attribute]</td>
+            <td>[title]{ }</td>
+            <td>
+              This css is apply to all title attribute of element. its not
+              depends on value of title attribute
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>[attribute="value"]</td>
+            <td>[title = "seven"]{ }</td>
+            <td>
+              this css is apply on title attribute whose value is only "seven",
+              if the value is "seven mentor" then not apply the css.<br />
+             <b> Allow values :- seven.</b> <br><b>Not allow values : seven
+              mentor,seven-mentor,sevenmentor, mentor seven</br>
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>[attribute~="value"]</td>
+            <td>[title ~= "seven"]{ }</td>
+            <td>
+              this css is apply on title attribute whose value is "seven" or
+              "seven mentor" "its seven time" or "this no. seven" ,<b>
+                but if the value is "tseven" then css not work.</b
+              >.
+              <br />
+             <b> Allow values :- seven, seven mentor,its seven time, its seven .</b> <br><b>Not allow values : seven-mentor, mentor-seven</br>
+              
+            
+            </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>[attribute|="value"]</td>
+            <td>[title |= "seven"]{ }</td>
+            <td>
+              this css is apply on title attribute whose value is "seven"
+              or"seven-text",<b
+                >But if the value is "seven mentor" or "its-seven-time" or
+                "tseven" or "t-seven" on this all example the css is not
+                work.</b
+              >
+              <br />
+             <b> Allow values :- seven, seven-mentor</b> <br><b>Not allow values : seven_mentor,
+                 seven mentor, its-seven-time,t-seven", "tseven</br>
+              
+            </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>[attribute^="value"]</td>
+            <td>[title ^= "seven"]</td>
+            <td>
+                  <br />
+             <b> Allow values :- seven, seven-mentor</b> <br>
+             <b>Not allow values : seven_mentor, seven mentor its seven time
+                 its-seven-time,t-seven", "tseven</br>
+              
+            </td>
+          </tr>
+
+          <tr>
+            <td>6.</td>
+            <td>[attribute$="value"]</td>
+            <td>[title $= "seven"]</td>
+            <td> css apply when value find at end of string
+                  <br />
+             <b> Allow values :- mentorseven, mentor_seven, tring-seven, seven , string seven</b> <br>
+             <b>Not allow values : Sevenstrnig, seven tring,(not accept )</br>
+              
+            </td>
+          </tr>
+           <tr>
+            <td>7.</td>
+            <td>[attribute*="value"]</td>
+            <td>[title *= "seven"]</td>
+            <td>
+                  <br />
+             <b> Allow values :- allow all values where seven is present</b> <br>
+             <b>Not allow values : </br>
+              
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

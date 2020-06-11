@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paginatiom</title>
+    <style>
+      .pagination {
+        display: inline-block;
+      }
+      .pagination a {
+        color: #ffffff;
+        background-color: chartreuse;
+        text-shadow: 4px 2px 1px #20241c, 2px 2px 4px grey;
+        border: 1px solid gray;
+        padding: 5px;
+        text-decoration: none;
+      }
+      .pagination a:hover,
+      .pagination a.active {
+        color: black;
+        background-color: white;
+        text-shadow: 4px 2px 1px chartreuse, 2px 2px 4px grey;
+        border: 1px solid gray;
+        padding: 5px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <a href="#">1</a>
+      <a href="#" class="active">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+    </div>
+  </body>
+</html>
