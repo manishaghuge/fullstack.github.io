@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (var i = 0; i < 5; i++) {
+        document.write(i);
+      }
+      // arr loop
+      var arr = [5, 4, 9, 50, 20];
+      for (var i = 0; i < arr.length; i++) {
+        document.write("<br>Array Values :" + arr[i]);
+      }
+      document.write("<br>Array Values :" + arr[2]);
+
+      for (var j of arr) {
+        document.write("<br>Array Values :" + j);
+      }
+
+      //    obj loop
+      var obj = {
+        name: "mahia",
+        Age: 25,
+        isPass: true,
+      };
+      for (var k in obj) {
+        console.log("k ", k);
+        document.write("<br> obj values:" + k + ":" + obj[k]);
+      }
+    </script>
+  </body>
+</html>
