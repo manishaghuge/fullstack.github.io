@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (var i = 0; i < 10; i++) {
+        document.write("<br>" + i);
+      }
+
+      var arr = ["A", "B", "C", "D"];
+
+      for (var i = 0; i < arr.length; i++) {
+        document.write("<br>" + arr[i]);
+      }
+
+      for (var j of arr) {
+        document.write("<br> of : " + j);
+      }
+
+      var obj = {
+        name: "Ameen",
+        age: 24,
+        isPass: true,
+        values: [1, 2, 3, 4],
+      };
+
+      for (var k in obj) {
+        console.log("k ", k);
+        if (Array.isArray(obj[k])) {
+          for (var e of obj[k]) {
+            document.write("<br> : in : " + e);
+          }
+        }
+
+        document.write("<br> : in : " + k + " : " + obj[k]);
+      }
+    </script>
+  </body>
+</html>

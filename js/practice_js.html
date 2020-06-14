@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demoid">
+      Hello Html
+    </p>
+    <p id="demo">
+      Hello Html
+    </p>
+    <button
+      type="button"
+      onclick='document.getElementById("demo").innerHTML = "Hello new Javascript" '
+    >
+      Click
+    </button>
+    <script>
+      document.getElementById("demoid").innerHTML = "Hello Javascript";
+    </script>
+
+    <!-- Javascript can change the atribute value of html element -->
+    <p title="Flower" id="myImage">
+      This tag title is folwer, now i chage it newfolwer with Javascript
+    </p>
+    <button onclick="document.getElementById('myImage').title='new Flower'">
+      change title
+    </button>
+    <p title="Flower" id="myImage1" style="color: green;">
+      This tag has style color is green, now i chage it to blue with Javascript
+    </p>
+    <button onclick="document.getElementById('myImage1').style='color : blue'">
+      Turn to blue
+    </button>
+
+    <p title="Flower" id="myImage2" style="font-size: 12px;">
+      fontsize 12px to 35px
+    </p>
+    <button onclick="document.getElementById('myImage2').style.fontSize='35px'">
+      change font size
+    </button>
+  </body>
+</html>
