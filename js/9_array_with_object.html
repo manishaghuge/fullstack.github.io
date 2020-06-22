@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [
+        (manisha = {
+          company_id: 75216,
+          company_name: "TCS",
+          Build_no: "4A",
+        }),
+        (kiran = {
+          company_id: 465,
+          company_name: "Infosys",
+          Build_no: "45",
+        }),
+      ];
+
+      // if (Array.isArray(arr)) {
+
+      for (var i of arr) {
+        // if (i != manisha) {
+        //   if (i != kiran) {
+        //     document.write("<br>" + i);
+        //   }
+        // } else {
+        for (var k in manisha) {
+          document.write("<br>" + k + manisha[k]);
+        }
+        for (var l in kiran) {
+          document.write("<br>" + k + kiran[l]);
+        }
+      }
+      // }
+
+      document.write("<br>" + manisha.company_name);
+      // }
+    </script>
+  </body>
+</html>

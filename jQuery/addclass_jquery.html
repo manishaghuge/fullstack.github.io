@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .divh2 {
+        color: #fff;
+        background-color: lawngreen;
+        /* height: 200px; */
+        font-size: 12px;
+        border: 1px solid gray;
+        border-radius: 10%;
+        box-shadow: 2px 2px 6px goldenrod;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>my div</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus modi
+        quibusdam alias voluptas ex rerum maxime blanditiis molestias, quos
+        quidem cum commodi optio voluptate saepe explicabo ad! Natus, ipsum
+        nobis.
+      </p>
+      <button id="div1">Add class</button>
+      <button id="div2">Remove class</button>
+      <button id="div3">Toggle class</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#div1").click(function () {
+          $("div h3, p").addClass("divh2");
+        });
+      });
+      $("#div2").click(function () {
+        $("div h3, p").removeClass("divh2");
+      });
+
+      $("#div3").click(function () {
+        $("div h3, p").toggleClass("divh2");
+      });
+    </script>
+  </body>
+</html>

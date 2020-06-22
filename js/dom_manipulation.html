@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo">Change text</p>
+    <p id="demo1"></p>
+
+    <input type="text" placeholder="set properties" id="fsize" />
+    <button onclick="change()">font size</button>
+    <script>
+      function change() {
+        //innerHtml and value
+        var x = document.getElementById("demo").innerHTML; //we are changing value of h1 tag content
+        var size = document.getElementById("fsize").value;
+        console.log(size);
+        document.getElementById("demo").style.fontSize = size + "px";
+
+        //document write used for show output
+      }
+      var c = 10;
+      var d = 20;
+      var e = +c + +d;
+      document.write("<br>", e);
+
+      document.getElementById("demo1").innerHTML = e;
+    </script>
+  </body>
+</html>

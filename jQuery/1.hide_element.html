@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tag(element) selector</h1>
+    <p>XYZ</p>
+    <p>ABC</p>
+    <p>DFG</p>
+    <br />
+
+    <h2>Id selector</h2>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <button id="text">click to hide with id</button>
+    <span>Lorem ipsum dolor sit amet.</span><br />
+    <h2>Class Selector</h2>
+
+    <button>click to hide with class</button>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div class="cid">manishs anis</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <h2>atrribute Selector with jquery</h2>
+    <a
+      href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_sel_button2"
+      target="_blank"
+      >click blank</a
+    >
+    <a
+      href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_sel_button2"
+      target="_top"
+      >click Top</a
+    >
+    <a
+      href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_sel_button2"
+      target="_parent"
+      >click parent</a
+    >
+    <a
+      href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_sel_button2"
+      target="_blank"
+      >click blank</a
+    >
+    <button>Click for Blank</button>
+
+    <h2>Table</h2>
+
+    <table border="1" style="border-collapse: collapse; width: 500px;">
+      <tr>
+        <th>No.</th>
+        <th>Even odd</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>ODD</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Even</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Odd</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Even</td>
+      </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      //$(object).ready(operation perform on obj)
+      $(document).ready(function () {
+        $("p").click(function () {
+          $(this).hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#text").click(function () {
+          $(this).hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".cid").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("button").click(function () {
+          $('a[target="_blank"]').hide(3000);
+        });
+      });
+      $(document).ready(function () {
+        $("tr:even").click(function () {
+          $(this).hide();
+        });
+      });
+    </script>
+  </body>
+</html>

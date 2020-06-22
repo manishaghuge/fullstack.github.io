@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../assets/img/img1.jpg" id="bigimag" width="600" /><br />
+    <img
+      src="../assets/img/img2.jpg"
+      width="200"
+      onclick="document.getElementById('bigimag').src = src"
+    />
+    <img
+      src="../assets/img/img3.jpg"
+      width="200"
+      onclick="document.getElementById('bigimag').src = src"
+    />
+    <img
+      src="../assets/img/img4.jpg"
+      width="200"
+      onclick="document.getElementById('bigimag').src = src"
+    />
+    <img
+      src="../assets/img/img5.jpg"
+      width="200"
+      onclick="document.getElementById('bigimag').src = src"
+    />
+    <button onclick="document.getElementById('bigimag').width = 700">
+      +
+    </button>
+    <button onclick="document.getElementById('bigimag').width = 300">
+      -
+    </button>
+    <script>
+      document.images.length;
+    </script>
+  </body>
+</html>

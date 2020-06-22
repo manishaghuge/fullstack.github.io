@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var obj = {
+        name: "pradip",
+        age: 30,
+        company: {
+          company_name: " xyz ",
+          comp_id: 755,
+          com_loc: "Baner",
+        },
+        phone: 9130146858,
+        address: {
+          add1: "nanded",
+          add2: "bodhadi",
+          pin: 4200,
+        },
+      };
+
+      for (var i in obj) {
+        if (i != "address") {
+          if (i != "company") {
+            document.write("<br >" + i + ": " + obj[i]);
+          }
+        } else {
+          for (var j in obj.address) {
+            console.log("values of address is" + j);
+            document.write("<br> " + j + ": " + obj.address[j]);
+          }
+          for (var k in obj.company) {
+            document.write("<br> " + k + ": " + obj.company[k]);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

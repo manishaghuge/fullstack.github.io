@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="document.form1.text1.focus()">
+    <h2>Enter your Name and Submit (input is string only)</h2>
+    <form name="form1">
+      <input type="text" name="text1" placeholder="enter name" />
+      <button onclick="allLetter(document.form1.text1)">Click</button>
+    </form>
+
+    <h2>Enter your Value and Submit (input is Number only)</h2>
+    <form name="form2">
+      <input type="text" name="text2" placeholder="enter name" />
+      <button onclick="allNumber(document.form2.text2)">Click</button>
+    </form>
+    <script>
+      function allLetter(inputext) {
+        var letter = /^[A-Za-z]+$/;
+
+        if (inputext.value.match(letter)) {
+          alert("Your name have accepted : you can try another");
+          return true;
+        } else if (inputext.value == "") {
+          alert("Please input filled");
+        } else {
+          alert("Please input alphabet characters only");
+          return false;
+        }
+      }
+      function allNumber(inputext) {
+        var letter = /^[0-9]+$/;
+
+        if (inputext.value.match(letter)) {
+          alert("Your name have accepted : you can try another");
+          return true;
+        } else if (inputext.value == "") {
+          alert("Please input filled");
+        } else {
+          alert("Please input Num only");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

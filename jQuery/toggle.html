@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        text-align: center;
+        background: cadetblue;
+        border: 1px solid gray;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        color: aliceblue;
+      }
+      div {
+        background: lavender;
+        padding: 20px;
+        border: 1px solid aquamarine;
+        box-shadow: 5px 5px 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>click to hide show</h2>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        numquam debitis quis ullam eveniet delectus enim, eligendi nulla
+        reiciendis consectetur dolor dicta, aut animi fugit est error recusandae
+        ut exercitationem.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        numquam debitis quis ullam eveniet delectus enim, eligendi nulla
+        reiciendis consectetur dolor dicta, aut animi fugit est error recusandae
+        ut exercitationem.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        numquam debitis quis ullam eveniet delectus enim, eligendi nulla
+        reiciendis consectetur dolor dicta, aut animi fugit est error recusandae
+        ut exercitationem.
+      </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("h2").click(function () {
+          $("div").toggle(2000);
+        });
+
+        $("div").on({
+          mouseover: function () {
+            $("div p").css("background-color", "lightblue");
+          },
+          mouseleave: function () {
+            $("p").css("font-size", "55px");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

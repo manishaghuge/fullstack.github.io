@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #panel,
+      button {
+        padding: 5px;
+        text-align: center;
+        background-color: #7e92f5;
+        border: solid 1px #c3c3c3;
+      }
+      #panel {
+        padding: 50px;
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panel">
+      <h1>Hi DpanelANGDO</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat
+        autem amet adipisci consectetur voluptate voluptatum, veritatis eius,
+        repellendus asperiores voluptates obcaecati deserunt dolorum cum
+        incidunt neque. Nemo, iste quia.
+      </p>
+    </div>
+
+    <button id="slide2">Slide Down</button>
+    <button id="slide1">Slide Up</button>
+
+    <button id="slide3">Slide Up / Down</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#slide1").click(function () {
+          $("#panel").slideUp(2000);
+        });
+        $("#slide2").click(function () {
+          $("#panel").slideDown(2000);
+        });
+        $("#slide3").click(function () {
+          $("#panel").slideToggle(100);
+        });
+      });
+    </script>
+  </body>
+</html>

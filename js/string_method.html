@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="myid">this is upper lowercase studies</p>
+    <p id="myid1">this is upper lowercase studies</p>
+
+    <script>
+      var x = "this is my own fiding syllabus own";
+      document.write("string ix : ", x);
+
+      document.write("<br>first index of own : ", x.indexOf("own "));
+      document.write("<br> last index of own : ", x.lastIndexOf("own"));
+
+      document.write("<br>after giving second para meter to the method");
+
+      document.write("<br> last index of own : ", x.indexOf("own", 17));
+      document.write("<br> last index of own : ", x.lastIndexOf("own", 17));
+
+      //slice method
+      var z = "manisha ghuge karad from nanded";
+      document.write(
+        "<br>slice method with two positive param : ",
+        z.slice(5, 9)
+      );
+      document.write(
+        "<br>slice method with two negative param, its counted the string from end brcaose of negative no. : ",
+        z.slice(-11, -3)
+      );
+      document.write(
+        "<br>slice method with singl positive para , it will extract string from given index: ",
+        z.slice(5)
+      );
+      document.write(
+        "<br>slice method with singl negative para , it will extract string from given index: ",
+        z.slice(-5)
+      );
+      //substring and slice both are same , only diff is substring() ,d not accept negative numbers
+
+      //substr()md is similiar to slice , only diff is that substr takes sec para for length ,substr(start, length)
+      document.write(
+        "<br>substr method with two para  start and length : ",
+        z.substr(5, 15)
+      );
+      //its cal the length from start indext of given in substr md
+
+      //repalce()md
+      var p = " this is my company not yours company company";
+      document.write(
+        "<br>replace company with room : ",
+        p.replace("company", "room")
+      );
+      document.write(
+        "<br>replace company with room with i flg : ",
+        p.replace(/COMPANY/i, "room")
+      );
+      document.write(
+        "<br>replace company with room with i flg : ",
+        p.replace(/company/g, "room")
+      );
+
+      // Uppercase and LowerCase md
+      var j = "manisha Ghuge";
+      var s = j.toUpperCase();
+      document.getElementById("myid").innerHTML = s;
+      var i = "PRADIP KARAD";
+      var l = i.toLowerCase();
+      document.getElementById("myid1").innerHTML = l;
+    </script>
+  </body>
+</html>

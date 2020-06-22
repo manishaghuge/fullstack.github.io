@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="myform" onsubmit="formdata()" method="POST">
+      <input type="text" placeholder="fname" name="fname" />
+      <button>submit</button>
+    </form>
+    <script>
+      function formdata() {
+        var x = document.forms["myform"]["fname"].value;
+        if (x == "") {
+          alert("value must filled");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

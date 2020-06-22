@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+      var str = "store in arr";
+      var arr = str.split("");
+      var text = "";
+      for (var i = 0; i < arr.length; i++) {
+        text += arr[i] + "<br>";
+      }
+      document.getElementById("demo1").innerHTML = text;
+
+      function abc(a, b) {
+        document.getElementById("demo").innerHTML = "this is my fun" + (a + b);
+        console.log(arguments.length);
+      }
+      abc(4, 5);
+
+      var y = "agsdjcckk";
+      document.write(y.toUpperCase());
+    </script>
+  </body>
+</html>

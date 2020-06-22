@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="textshow">Some Text Here</p>
+    <input placeholder="font size" id="size" />
+    <input type="color" id="color" />
+
+    <button onclick="change()">font size</button>
+    <button
+      onclick='document.getElementById("textshow").style.fontStyle = "italic"'
+    >
+      <i>I</i>
+    </button>
+    <button onclick='document.getElementById("text").style.fontWeight = "Bold"'>
+      <b>B</b>
+    </button>
+
+    <script>
+      function change() {
+        var x = document.getElementById("textshow").innerHTML;
+        //for size
+        var size = document.getElementById("size").value;
+        console.log(size);
+        document.getElementById("textshow").style.fontSize = size + "px";
+        //for font color
+        var fcolor = document.getElementById("color").value;
+        document.getElementById("textshow").style.color = fcolor;
+      }
+    </script>
+  </body>
+</html>

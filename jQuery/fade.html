@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        text-align: center;
+        background: cadetblue;
+        border: 1px solid gray;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        color: aliceblue;
+      }
+      div {
+        background: lavender;
+        padding: 20px;
+        border: 1px solid aquamarine;
+        box-shadow: 5px 5px 7px;
+      }
+      p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>click to hide show</h2>
+    <div>
+      <p
+        id="para1"
+        style="width: 80px; height: 80px; display: none; background-color: red;"
+      ></p>
+      <p
+        id="para2"
+        style="
+          width: 80px;
+          height: 80px;
+          display: none;
+          background-color: greenyellow;
+        "
+      ></p>
+      <p
+        id="para3"
+        style="
+          width: 80px;
+          height: 80px;
+          display: none;
+          background-color: yellow;
+        "
+      ></p>
+    </div>
+
+    <button>Click to fade boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      //for fade in
+      //   $(document).ready(function () {
+      //     $("h2").click(function () {
+      //       $("p").toggle(1000, function () {
+      //         $("#para1").fadeIn();
+      //         $("#para1").fadeIn("slow");
+      //         $("#para1").fadeIn("fast");
+      //       });
+      //     });
+      //   });
+      $(document).ready(function () {
+        $("h2").click(function () {
+          $("p").toggle(1000, function () {
+            $("#para1").fadeToggle();
+            $("#para2").fadeToggle("slow");
+            $("#para3").fadeToggle("fast");
+          });
+        });
+      });
+      $(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeTo("slow", 0.15);
+    $("#div2").fadeTo("slow", 0.4);
+    $("#div3").fadeTo("slow", 0.7);
+  });
+});
+</script>
+    </script>
+  </body>
+</html>

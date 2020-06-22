@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p:nth-child(odd) {
+        background-color: coral;
+      }
+      p:nth-child(even) {
+        background-color: crimson;
+      }
+      button {
+        background-color: #fff;
+        border: 1px solid maroon;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click Event</h1>
+    <div class="clickevent">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+    </div>
+    <button class="classdi1">Click for click event</button>
+
+    <h1>Double Click Event</h1>
+    <div class="clickevent2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum
+        sapiente inventore optio non quas minima quo explicabo consequatur, fuga
+        mollitia deleniti recusandae magnam, iusto fugit autem cumque officia
+        nesciunt.
+      </p>
+    </div>
+    <button class="classdi2">Click for click event</button>
+
+    <h1>Mouse over Event</h1>
+    <button class="classdi3">Click for Mouseenterevent</button>
+    <p id="user"></p>
+
+    <h1>Blur and focus</h1>
+
+    Name: <input type="text" name="fullname" /><br />
+    Email: <input type="text" name="email" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button.classdi1").click(function () {
+          $("div.clickevent  p:nth-child(even)").hide(3000);
+          $("div.clickevent  p:nth-child(even)").show(3000);
+        });
+      });
+      $(document).ready(function () {
+        $("button.classdi2").dblclick(function () {
+          $("div.clickevent2  p:nth-child(odd)").hide(3000);
+          $("div.clickevent2  p:nth-child(odd)").show(3000);
+        });
+      });
+      $(document).ready(function () {
+        $(".classdi3").mouseenter(function () {
+          var user = prompt("enter User Value", "12");
+          document.getElementById("user").innerHTML = user;
+        });
+      });
+
+      $(document).ready(function () {
+        $("input").focus(function () {
+          $(this).css("border", "1px solid yellow");
+        });
+        $("input").blur(function () {
+          $(this).css("border", "1px solid green");
+        });
+      });
+    </script>
+  </body>
+</html>

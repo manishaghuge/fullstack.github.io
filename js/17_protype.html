@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function car(carName, carColor, wheel) {
+        this.carName = carName;
+        this.carColor = carColor;
+        this.wheel = wheel;
+      }
+
+      var myCar = new car("Honda City", "Shine gray", "4 wheel");
+      car.prototype.plateno = null; //prorotype crate
+      myCar.plateno = "MH27 - 4444";
+
+      document.write("my car name is : ", myCar.carName);
+      document.write("<br> Boolean to source method", myCar.toSource());
+    </script>
+  </body>
+</html>

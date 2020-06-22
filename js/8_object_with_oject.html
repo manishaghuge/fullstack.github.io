@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var obj = {
+        Name: "Manisha",
+        Age: 25,
+        Status: "Active",
+        addresss: {
+          addresss1: "Pune",
+          addresss2: "wakad",
+          pin: 4441201,
+        },
+      };
+
+      for (var i in obj) {
+        // console.log("values of obj :" + i);
+        // console.table("values of obj :" + i);
+        if (i != "addresss") {
+          document.write("<br >" + i + ": " + obj[i]);
+        } else {
+          for (var j in obj.addresss) {
+            console.log("values of address is" + j);
+            document.write("<br> " + j + ": " + obj.addresss[j]);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

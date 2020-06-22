@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ol {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Add New HTML Content</h2>
+    <p id="test">Add new txt by append method</p>
+    <ol>
+      <li>This is 1 line</li>
+      <li>This is 2 line</li>
+      <li>This is 3 line</li>
+      <li>This is 4 line</li>
+      <li id="ollist"></li>
+    </ol>
+    <button id="ptag">Add to p</button>
+    <button id="oltag">Add to ol</button>
+
+    <!-- //prepend method -->
+    <ol type="A">
+      <li>This is prepent method</li>
+      <li>This is prepent method</li>
+      <li>This is prepent method</li>
+      <li>This is prepent method</li>
+    </ol>
+    <button id="prepend">Prepend method</button>
+
+    <!-- Having three diff elemrnt -->
+    <p>This is a paragraph.</p>
+    <button onclick="appendText()">Append text</button>
+    <br />
+    <br />
+    <!-- //after before -->
+    <img
+      src="../assets/img/img.jpeg"
+      alt="jQuery"
+      width="100"
+      height="140"
+    /><br /><br />
+
+    <button id="btn1">Insert before</button>
+    <button id="btn2">Insert after</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#ptag").click(function () {
+          alert("Text: " + $("#test").text());
+          $("p").append("<b>Hello p tag</b>");
+        });
+        $("#oltag").click(2000, function () {
+          alert("Text: " + $("#ollist").html());
+          $("ol").show(2000).append("<li>Hello ol list tag</li>");
+        });
+
+        //prepend method
+        $("#prepend").click(2000, function () {
+          alert("Text: " + $("#ollist").html());
+          $("ol[type= 'A']")
+            .show(2000)
+            .prepend("<li>newly added prepend md</li>");
+        });
+
+        $("#btn1").click(function () {
+          $("img").before(
+            "<img src='../assets/img/img1.jpg' alt='jQuery' width='100' height='140' />"
+          );
+        });
+
+        $("#btn2").click(function () {
+          $("img").after(
+            "<img src='../assets/img/img3.jpg' alt='jQuery' width='100' height='140' />"
+          );
+        });
+      });
+
+      function appendText() {
+        var txt1 = "<p>Text.</p>"; // Create text with HTML
+        var txt2 = $("<p></p>").text("Text."); // Create text with jQuery
+        var txt3 = document.createElement("p");
+        txt3.innerHTML = "Text."; // Create text with DOM
+        $("body").append(txt1, txt2, txt3); // Append new elements
+      }
+    </script>
+  </body>
+</html>

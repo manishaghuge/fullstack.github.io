@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="../assets/img/img.jpeg"
+      alt="images not found"
+      id="demo"
+      width="400"
+      height="200"
+      title="its my img"
+    />
+    <button onclick="ele.height = 400">height</button>
+    <button onclick="ele.width = 600">width</button>
+    <button onclick="ele.src='../assets/img/img2.jpg'">Image</button>
+
+    <br /><br />
+    <hr />
+    <p id="newid"></p>
+    <hr />
+
+    <script>
+      var ele = document.getElementById("demo");
+      console.log("ele of html : ", ele);
+      console.log("ele of html : ", ele.width);
+      ele.height = 300;
+
+      document.getElementById("newid").innerHTML =
+        "this is my Dom method with js and html element" + ele.innerHTML;
+    </script>
+  </body>
+</html>

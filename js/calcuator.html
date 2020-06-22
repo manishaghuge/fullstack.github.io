@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        height: 35px;
+        width: 35px;
+      }
+      input {
+        width: 150px;
+        height: 27px;
+        margin-bottom: 10px;
+      }
+      input::placeholder {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="inputtext" placeholder="enter values" value="" /><br />
+    <button onclick="output('+')">+</button>
+    <button onclick="output('-')">-</button>
+    <button onclick="clean()">C</button>
+    <button onclick="calc()">=</button><br />
+    <button onclick="output(1)">1</button>
+    <button onclick="output(2)">2</button>
+    <button onclick="output(3)">3</button>
+    <button onclick="output(4)">4</button><br />
+    <button onclick="output(5)">5</button>
+    <button onclick="output(6)">6</button>
+    <button onclick="output(7)">7</button>
+    <button onclick="output(8)">8</button><br />
+    <button onclick="output(9)">9</button>
+    <button onclick="output(0)">0</button>
+    <button onclick="output('.')">.</button>
+    <button onclick="output('/')">/</button>
+
+    <script>
+      function output(val) {
+        var x = document.getElementById("inputtext").value;
+        document.getElementById("inputtext").value = x + "" + val;
+      }
+      function calc() {
+        var x = document.getElementById("inputtext").value;
+
+        document.getElementById("inputtext").value = eval(x);
+      }
+      function clean() {
+        // var x = document.getElementById("inputtext").value;
+
+        document.getElementById("inputtext").value = "";
+      }
+    </script>
+  </body>
+</html>

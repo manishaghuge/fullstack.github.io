@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = ["abc", "def", "ijk", "lmn"];
+      var numarr = [2, 3, 5, 6, 7];
+      var mixarr = [2, "abc", 5, "hdk", 6, "fhu", 7];
+
+      console.log("Arrays type is: ", typeof arr);
+      console.log("Arrays type is: ", typeof numarr);
+      console.log("Arrays type is: ", typeof mixarr);
+
+      console.log("Arrays length is: ", arr.length);
+      console.log("Arrays length is: ", numarr.length);
+      console.log("Arrays length is: ", mixarr.length);
+
+      //concat method
+
+      var concatarr = arr.concat(numarr);
+      document.write("<br> two array in one : ", concatarr);
+      console.log("Arrays type is: ", typeof concatarr);
+
+      var concatarr2 = arr.concat(numarr, mixarr);
+      document.write("<br> three array in one : ", concatarr2);
+      console.log("Arrays type is: ", typeof concatarr2);
+
+      var concatarr3 = arr.concat("manisha", 25, "pardip", 04);
+      document.write(
+        "<br> direct element concat with array in one : ",
+        concatarr3
+      );
+      console.log("Arrays type is: ", typeof concatarr3);
+
+      //   for (var j in concatarr) {
+      //     // in loop return the index num of array
+      //     document.write("<br> its return the index : ", j);
+      //   }
+      //   for (var i of concatarr) {
+      //     // in loop return the value of array
+      //     document.write("<br> its return the index : ", i);
+      //   }
+    </script>
+  </body>
+</html>

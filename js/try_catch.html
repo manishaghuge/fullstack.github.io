@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="demo" type="text" />
+    <button onclick="myfun()">click</button>
+    <p id="dinput"></p>
+    <script>
+      function myfun() {
+        var msg = document.getElementById("dinput");
+        var x = document.getElementById("demo").value;
+
+        try {
+          if (x == "") throw "this is empty input";
+          if (isNaN(x)) throw "Not a no. this is string";
+          x = Number(x); //con string to num
+          if (x > 20) throw " this exceed the value";
+          if (x < 5) throw " this is low no.";
+        } catch (error) {
+          msg.innerHTML = "input is " + error;
+        }
+      }
+    </script>
+  </body>
+</html>

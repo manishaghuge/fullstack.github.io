@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .myclass {
+        color: white;
+        background-color: "green";
+      }
+      .newclass {
+        background-color: "green";
+      }
+    </style>
+  </head>
+  <body>
+    <button>Start Animation</button>
+    <div
+      style="
+        background: yellow;
+        height: 100px;
+        width: 300px;
+        position: absolute;
+      "
+    >
+      <p>jquery</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("div")
+            .animate({ left: "250px", height: "200px" })
+            .css("background-color", "green");
+          $("p").animate({ fontSize: "40px" }, 2000).addClass("myclass");
+        });
+      });
+    </script>
+  </body>
+</html>

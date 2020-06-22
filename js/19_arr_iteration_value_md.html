@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array value of md</h1>
+    <p>
+      The values() method creates a new array iterator object that carries the
+      values specified at each array index. We can iterate the array elements
+      via loops or iterator methods.
+    </p>
+    <script>
+      var arr = ["ohv", "diouhfv", "fhvudf", "doiuvh"];
+      var irt = arr.values();
+      var fff = arr.entries();
+
+      for (var j of irt) {
+        document.write(j + " ");
+      }
+      for (var j of fff) {
+        document.write("<br>", j + " ");
+      }
+    </script>
+  </body>
+</html>
