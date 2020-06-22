@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Click</button>
+    <img src="../assets/img/img2.jpg" style="height: 100px; width: 300px;" />
+    <div style="height: 100px; width: 300px; background-color: crimson;"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("img, div")
+            .animate({ left: "250px", height: "+=150px", width: "+=150px" })
+            .css("border", "5px solid gray", "transform", "rotate(360deg)");
+        });
+      });
+    </script>
+  </body>
+</html>

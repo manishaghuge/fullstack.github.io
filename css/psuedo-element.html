@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-letter {
+        color: #ff0000;
+        font-size: xx-large;
+      }
+      p:nth-child(odd)::after {
+        content: url(https://media.tenor.com/images/471c765f789a9dd73c2f4fe62616cb40/tenor.gif);
+        color: blue;
+        background-color: brown;
+      }
+      p::selection {
+        background-color: cornsilk;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

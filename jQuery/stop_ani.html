@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #panel,
+      #flip {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #555;
+        color: white;
+        border: solid 1px #666;
+        border-radius: 3px;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+      .ani4 {
+        background-color: rgb(0, 255, 98);
+        position: relative;
+        animation: ani4 5s linear 2s infinite alternate;
+      }
+      @keyframes ani4 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+          width: 50px;
+          height: 50px;
+          transform: rotate(90deg);
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+          width: 100px;
+          height: 100px;
+          transform: rotate(360deg);
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+          width: 75px;
+          height: 75px;
+          transform: rotate(400deg);
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+          width: 30px;
+          height: 30px;
+          transform: rotate(500deg);
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+          width: 10px;
+          height: 10px;
+          height: 10px;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <marquee behavior="alternate">
+      <img src="../assets/img/img3.jpg" width="100" alt="" />
+    </marquee>
+
+    <button id="hide">Hide</button>
+    <button id="show">show</button>
+    <button id="stop">stop</button>
+    <br /><br />
+    <p>Ani3</p>
+    <button id="aniadd">Addclass</button>
+
+    <button id="anihide">Hide</button>
+    <button id="anishow">show</button>
+    <button id="anistop">stop</button>
+    <br /><br />
+    <button id="panelstop">stop</button>
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">
+      Hello world!
+      <marquee behavior="alternate">
+        <img src="../assets/img/img3.jpg" width="100" alt="" />
+      </marquee>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("marquee").hide();
+        });
+        $("#show").click(function () {
+          $("marquee").show();
+        });
+        $("#stop, #anistop, #panelstop").click(function () {
+          $("p").stop();
+          $("marquee").stop();
+          $("#panel").stop();
+        });
+        $("#flip").click(function () {
+          $("#panel").slideDown(5000);
+        });
+        $("#aniadd").click(function () {
+          $("p").addClass("ani4");
+        });
+        $("#anihide").click(function () {
+          $("p").hide();
+        });
+        $("#anishow").click(function () {
+          $("p").show();
+        });
+        // $("#anistop").click(function () {
+        //   $("p").stop();
+        // });
+      });
+    </script>
+  </body>
+</html>
