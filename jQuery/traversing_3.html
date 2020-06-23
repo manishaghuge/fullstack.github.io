@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>yellow show is siblings div sibling</h1>
+    <h1>green show is siblings div3 nextAll</h1>
+
+    <div class="ancestors">
+      <div id="div1">
+        div tag
+        <p>
+          P tag its showing parents of span
+          <span
+            >span tag parent is P
+            <a>
+              Anker
+              <b>Blod</b>
+            </a>
+          </span>
+        </p>
+      </div>
+      <div id="div2">
+        <p>
+          P tag (Blue showing all parents of span tag including main div as
+          well)
+          <span
+            >span tag
+            <a>
+              Anker
+              <b>Blod</b>
+            </a>
+          </span>
+        </p>
+      </div>
+
+      <div id="div3">
+        <p>
+          P tag(green show all parents of bold tag including html,body tag
+          aswell)
+          <span
+            >span tag
+            <a>
+              Anker
+              <b>Blod</b>
+            </a>
+          </span>
+        </p>
+      </div>
+
+      <div id="div4">
+        <p>
+          P tag(green show all parents of bold tag including html,body tag
+          aswell)
+          <span
+            >span tag
+            <a>
+              Anker
+              <b>Blod</b>
+            </a>
+          </span>
+        </p>
+      </div>
+
+      <div id="div5">
+        <p>
+          P tag(green show all parents of bold tag including html,body tag
+          aswell)
+          <span
+            >span tag
+            <a>
+              Anker
+              <b>Blod</b>
+            </a>
+          </span>
+        </p>
+      </div>
+
+      <div id="div6">
+        <p>
+          P tag(green show all parents of bold tag including html,body tag
+          aswell)
+          <span
+            >span tag
+            <a>
+              Anker
+              <b>Blod</b>
+            </a>
+          </span>
+        </p>
+      </div>
+
+      <div id="div7">
+        <p>
+          P tag(green show all parents of bold tag including html,body tag
+          aswell)
+          <span
+            >span tag
+            <a>
+              Anker
+              <b>Blod</b>
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#div1").siblings().css({
+          color: "green",
+          "box-shadow": "2px 2px 4px yellow",
+          "font-size": "20px",
+        });
+        $("#div2").next().css({ color: "red", border: "2px solid red" });
+        $("#div3").nextAll().css({
+          color: "red",
+          border: "2px solid green",
+          "font-size": "20px",
+        });
+        $("#div4 span").nextUntil().css({
+          color: "green",
+          border: "2px solid pink",
+          "font-size": "20px",
+        });
+        $("#div5 span").prev().css({
+          color: "orange",
+          border: "2px solid blue",
+          "font-size": "20px",
+        });
+        $("#div6 b").prevAll().css({
+          color: "red",
+          border: "2px solid green",
+          "font-size": "20px",
+        });
+        $("#div7 b").prevUntil().css({
+          color: "red",
+          border: "2px solid green",
+          "font-size": "20px",
+        });
+      });
+    </script>
+  </body>
+</html>
